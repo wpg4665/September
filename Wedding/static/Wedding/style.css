@@ -1,0 +1,86 @@
+body {margin: 0;overflow: hidden;}
+h1 {
+	font-family: 'Foxes', Georgia, serif;
+	font-size: 6.5em;
+	text-align: center;
+	color: #966FD6;
+	text-shadow: -1.5px 0 5.5px black, 0 1.5px 5.5px black, 1.5px 0 5.5px black, 0 -1.5px 5.5px black;
+	position: fixed;
+	width: 100%;
+	left: 5.5%;
+}
+h1.top {
+	top: -70px;
+}
+h1.bottom {
+	bottom: -90px;
+}
+h1 span {
+	font-family: 'Crush', Georgia, serif;
+}
+p {font-family: 'Sansation', Arial, sans-serif}
+
+.background {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: url(/static/OneYear/final-img.png) no-repeat center 0 fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/OneYear/final-img.png', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/OneYear/final-img.png', sizingMethod='scale');
+}
+
+nav {
+    position: fixed;
+	width: 550px;
+    height: 35px;
+    font-size: 16px;
+    font-family: 'Champagne', Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px #333333;
+    border-radius: 8px;
+    bottom: 10px;
+    left: 10px;
+	background: rgba(150, 111, 214, 0.7);
+}
+
+nav ul {
+    height: auto;
+    padding: 8px 0;
+    margin: 0;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00F;
+    padding: 8px 8px 8px 8px;
+}
+
+/* Fancy fonts */
+@font-face {font-family: Delicious;src: local('Delicious'), url('fonts/Delicious.ttf') format('truetype')}
+/* Normal fonts */
+@font-face {font-family: Champagne;src: local('Champagne'), url('fonts/Champagne.ttf') format('truetype')}
+@font-face {font-family: Champagne-Bold;src: local('Champagne-Bold'), url('fonts/Champagne-Bold.ttf') format('truetype')}
+@font-face {font-family: Champagne-Italic;src: local('Champagne-Italic'), url('fonts/Champagne-Italic.ttf') format('truetype')}
+@font-face {font-family: Champagne-Bold-Italic;src: local('Champagne-Bold-Italic'), url('fonts/Champagne-Bold-Italic.ttf') format('truetype')}
+/* Test fonts */
+/* butterfly with | */
+@font-face {font-family: Touch;src: local('Touch'), url('fonts/Touch.ttf') format('truetype');}
+/* _ for hearts, | for foxes */
+@font-face {font-family: Foxes;src: local('Foxes'), url('fonts/Foxes.ttf') format('truetype');}
+/* [ and ] for surrounding hearts, * for tiny heart, | for full character heart */
+@font-face {font-family: Crush;src: local('Crush'), url('fonts/Crush.ttf') format('truetype');}
+@font-face {font-family: Walt;src: local('Walt'), url('fonts/Walt.ttf') format('truetype');}
