@@ -29,13 +29,14 @@ p {font-family: 'Sansation', Arial, sans-serif}
 	bottom: 0;
 	height: 100%;
 	width: 100%;
-	background: url(/static/OneYear/final-img.png) no-repeat center 0 fixed;
+	/*noinspection CssUnknownTarget*/
+	background: url(/static/Wedding/final-img.png) no-repeat center 0 fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/OneYear/final-img.png', sizingMethod='scale')";
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/OneYear/final-img.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/Wedding/final-img.png', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/Wedding/final-img.png', sizingMethod='scale');
 }
 
 nav {

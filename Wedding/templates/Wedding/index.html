@@ -1,20 +1,12 @@
 {% extends "Wedding/base.html" %}
 {% load staticfiles %}
-{% block title %}{{ delta.days }} days left!{% endblock %}
+{% block title %}Steph & Will{% endblock %}
 
 {% block content %}
-	<div class="background"></div>
-
-	<h1 class="top"><span>[</span>Stephanie & Will <span>]</span></h1>
-	<h1 class="bottom">9 <span>*</span> 4 <span>*</span> 2015</h1>
-
-    <nav>
-        <ul>
-			<li><a href="us">Stephanie & Will</a></li>
-			<li><a href="stephanie">Stephanie</a></li>
-			<li><a href="will">Will</a></li>
-			<li><a href="party">Wedding Party</a></li>
-			<li><a href="event">The Big Day</a></li>
-		</ul>
-    </nav>
+	{% include "Wedding/page_header.html" %}
+	<div id="count-down" class="content-block"></div>
+	<div id="intro" class="image-block"></div>
+	<nav></nav>
+	<div id="main-info" class="content-block"></div>
+	<footer></footer>
 {% endblock %}

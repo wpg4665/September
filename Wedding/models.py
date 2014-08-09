@@ -6,8 +6,8 @@ from django.dispatch import receiver
 class Article(models.Model):
 	title = models.CharField(max_length=30)
 	content = models.TextField()
-	background_image = models.FileField(upload_to='OneYear/backgrounds')
-	display_order = models.PositiveSmallIntegerField(default=0, help_text='This value is used in determining the order in which to display individual pages')
+	background_image = models.FileField(upload_to='Wedding/backgrounds')
+	order = models.PositiveSmallIntegerField(default=0, help_text='This value is used in determining the order in which to display individual pages')
 
 	def title_id(self):
 		return self.title.replace(" ", "_").lower()
@@ -16,7 +16,7 @@ class Article(models.Model):
 		return self.title
 
 	class Meta():
-		ordering = ['display_order']
+		ordering = ['order']
 
 
 @receiver(pre_save, sender=Article)

@@ -1,9 +1,9 @@
 from django.contrib import admin
-from OneYear.models import Article
-from adminsortable.admin import SortableAdminMixin
+from Wedding.models import Article
+from adminsortable.admin import SortableAdmin
 
 
-class ArticleAdmin(SortableAdminMixin, admin.ModelAdmin):
+class ArticleAdmin(SortableAdmin, admin.ModelAdmin):
 	pass
 
 admin.site.register(Article, ArticleAdmin)
