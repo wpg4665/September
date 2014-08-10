@@ -1,14 +1,21 @@
 <header>
-	<div id="countdown">
-		<div class="days">391</div>
-		<div class="hours">12</div>
-		<div class="mins">30</div>
-	</div>
-	<div id="date">9 * 4 * 15</div>
-	<div id="banner">
-		<img src="/media/engagement.png">
-	</div>
-	<nav>
+	<img id="portrait" src="/my-media/engagement.png">
+	<section id="dates">
+		<div class="wedding">
+		{% for unit, value in wedd_date.items %}
+			<div id="{{ unit }}">{{ value }}</div>
+		{% endfor %}
+		</div>
+		<div class="countdown">
+		{% for unit, value in diff.items %}
+			<div id="{{ unit }}">{{ unit|title }}: {{ value }}</div>
+		{% endfor %}
+		</div>
+	</section>
+	<section id="banner">
+		Stephanie Young & Will Gordon
+	</section>
+	<nav id="main-nav">
 		<ul>
 			<li>Our Story</li>
 			<li>Wedding Party</li>
