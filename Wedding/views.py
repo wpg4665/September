@@ -14,7 +14,7 @@ def index(request):
 	difference["minutes"] = (delta.seconds // 60) - (total_hours * 60)
 	formatted_date = OrderedDict({})
 	formatted_date["day"] = "The " + ordinal(wedding_date.day)
-	formatted_date["month"] = "of " + wedding_date.strftime("%B")
+	formatted_date["month"] = "of " + wedding_date.strftime("%b")
 	formatted_date["year"] = wedding_date.strftime("%Y")
 	return render_to_response('Wedding/index.html', {'diff': difference, 'wedd_date': formatted_date})
 

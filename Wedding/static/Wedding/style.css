@@ -6,54 +6,56 @@ body {
 }
 
 header {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	overflow: hidden;
+	text-align: center;
 }
 
 header img {
-	top: -75vh;
+	height: 50vmax;
 	position: relative;
-	z-index: -10;
-	height: 75vh;
+	top: 2.5em;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+/* Sizes are looking good, except when screen size gets too wide, then everything just gets too big! =/ */
+
+#banner {
+	/*height: 8vmax;*/
+	position: relative;
+	bottom: 25px;
+	width: 100%;
+	background: #3B283D;
+	/*text-align: center;*/
+	z-index: 5;
+	font-size: 7vmax;
+	/*white-space: nowrap;*/
 }
 
 #dates {
-	height: 70vh;
+	/*height: 70vh;
 	width: 100%;
 	position: absolute;
-	top: 0;
+	top: 0;*/
+	font-size: 5vmax;
 }
 
 #dates .wedding {
 	position: absolute;
-	left: 5vh;
-	top: 0;
+	left: 25px;
+	top: 25px;
+	text-align: left;
 }
 
 #dates .countdown {
 	position: absolute;
-	right: 5vh;
+	right: 25px;
+	top: 25px;
 	text-align: right;
-	top: 0;
 }
 
-#banner {
-	height: 20vh;
-	position: absolute;
-	bottom: 10vh;
-	width: 100%;
-	background: #3B283D;
-	text-align: center;
-	z-index: 5;
-	font-size: 15vh;
-	white-space: nowrap;
-}
+
 
 /* implement media query to prevent font size for height over a certain threshold?
 		well shit, what about a smaller width??? Ugh, idk =/ */
