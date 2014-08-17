@@ -1,23 +1,37 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background: #4F5880;
-	color: #B6BAB9;
+	background: #B6BAB9;
+	color: #3B283D;
 }
 
-header {
+/*header {
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
+}*/
+
+.fullsize {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+header section > div {
+	display: inline-block;
+	height: 100vh;
+	width: 19.9vw;
+}
+
+header .portrait {
+	text-align: center;
+	width: 60vw;
 }
 
 header img {
-	height: 50vmax;
-	position: relative;
-	top: 2.5em;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
+	height: 100vh;
 }
+
 
 /* Sizes are looking good, except when screen size gets too wide, then everything just gets too big! =/ */
 
@@ -27,6 +41,7 @@ header img {
 	bottom: 25px;
 	width: 100%;
 	background: #3B283D;
+	color: #B6BAB9;
 	/*text-align: center;*/
 	z-index: 5;
 	font-size: 7vmax;
