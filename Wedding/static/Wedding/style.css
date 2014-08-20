@@ -1,79 +1,82 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background: #B6BAB9;
+	background: url(/media/bg.png);
 	color: #3B283D;
 }
 
-/*header {
+/* <- 352 px *//*
+@media (max-width: 22em) {
+	header .portrait {
+		background: url(/media/engagementSmall.png);
+	}
+}
+
+/* 353px - 720px *//*
+@media (min-width: 22.0625em) and (max-width: 45em) {
+	header .portrait {
+		background: url(/media/engagementMed.png);
+	}
+}
+
+/* 1100px -> */
+@media (min-width: 68.75em) {
+	#portrait {
+		width: 640px;
+		background: url(/media/engagementLarge.png) no-repeat;
+	}
+}
+
+header {
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
-}*/
-
-.fullsize {
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
 }
+	/*
+	 *	#header-top specifically contains the date, countdown, and main portrait
+	 *	#header-top is meant to be "behind" everything and stay in place while the
+	 *	rest of the page scrolls over it
+	 */
+	#header-top {
+		position: fixed;
+		width: 100%;
+		z-index: -10;
+	}
 
-header section > div {
-	display: inline-block;
-	height: 100vh;
-	width: 19.9vw;
-}
+	/* These divs are the date and countdown containers */
+	#header-top > div {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 20vh;
+		font-size: 3.7em;
+		font-family: 'Crush', Georgia, serif;
+	}
 
-header .portrait {
-	text-align: center;
-	width: 60vw;
-}
+	/* Main portrait container */
+	#portrait {
+		display: inline-block;
+		height: 90vh;
+		background-size: cover;
+	}
 
-header img {
-	height: 100vh;
-}
+	/* Div specifically for the date */
+	#wedding-date {
+		text-align: right;
+		margin-right: 20px;
+	}
 
+	/* Div specifically for countdown */
+	#countdown {
+		text-align: left;
+		margin-left: 20px;
+	}
 
-/* Sizes are looking good, except when screen size gets too wide, then everything just gets too big! =/ */
-
-#banner {
-	/*height: 8vmax;*/
-	position: relative;
-	bottom: 25px;
-	width: 100%;
-	background: #3B283D;
-	color: #B6BAB9;
-	/*text-align: center;*/
-	z-index: 5;
-	font-size: 7vmax;
-	/*white-space: nowrap;*/
-}
-
-#dates {
-	/*height: 70vh;
-	width: 100%;
-	position: absolute;
-	top: 0;*/
-	font-size: 5vmax;
-}
-
-#dates .wedding {
-	position: absolute;
-	left: 25px;
-	top: 25px;
-	text-align: left;
-}
-
-#dates .countdown {
-	position: absolute;
-	right: 25px;
-	top: 25px;
-	text-align: right;
-}
-
-
-
-/* implement media query to prevent font size for height over a certain threshold?
-		well shit, what about a smaller width??? Ugh, idk =/ */
+	#banner {
+		width: 100%;
+		background: #3B283D;
+		color: #B6BAB9;
+		font-size: 7vmax;
+	}
 
 #main-nav {
 	height: 10vh;

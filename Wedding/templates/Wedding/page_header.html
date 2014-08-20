@@ -1,23 +1,20 @@
 <header>
-	<section class="fullsize">
-		<div class="wedding-date">
+	<section id="header-top">
+		<div id="wedding-date">
 		{% for unit, value in wedd_date.items %}
 			<div id="{{ unit }}">{{ value }}</div>
 		{% endfor %}
 		</div>
-		<div class="portrait">
-			<img src="/my-media/engagement.png">
-		</div>
-		<div class="countdown">
+		<section id="portrait"></section>
+		<div id="countdown">
 		{% for unit, value in diff.items %}
-			<div id="{{ unit }}">{{ unit|title }}: {{ value }}</div>
+			<div id="{{ unit }}">{{ unit|title }}:{{ value }}</div>
 		{% endfor %}
 		</div>
-
-	</section><!--
+	</section>
 	<section id="banner">
 		Stephanie&nbsp;Young &&nbsp;Will&nbsp;Gordon
-	</section>
+	</section><!--
 	<nav id="main-nav">
 		<ul>
 			<li>Our Story</li>
