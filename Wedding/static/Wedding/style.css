@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background: url(/media/bg.png);
 	color: #3B283D;
 }
 
@@ -41,14 +40,15 @@ header {
 		position: fixed;
 		width: 100%;
 		z-index: -10;
+		background: #FFF url(/media/bg.png);
 	}
 
 	/* These divs are the date and countdown containers */
 	#header-top > div {
 		display: inline-block;
 		vertical-align: top;
-		margin-top: 20vh;
-		font-size: 3.7em;
+		margin-top: 15vh;
+		font-size: 4em;
 		font-family: 'Crush', Georgia, serif;
 	}
 
@@ -57,6 +57,7 @@ header {
 		display: inline-block;
 		height: 90vh;
 		background-size: cover;
+		/* background-url and width set in @media */
 	}
 
 	/* Div specifically for the date */
@@ -75,19 +76,25 @@ header {
 		width: 100%;
 		background: #3B283D;
 		color: #B6BAB9;
-		font-size: 7vmax;
+		font-size: 6em;
+		margin-top: 80vh;
 	}
-
-#main-nav {
-	height: 10vh;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+/*
+	#main-nav {
+		height: 3em;
+		width: 100%;
+		background: #FFF url(/media/bg.png);
+	}
+*/
+section.container {
+	margin: -25px 0; /* Pushes banner backround right up to text base */
+	background: #FFF url(/media/bg.png);
 }
 
 #intro {
-	position: relative;
-	top: 100vh;
+	width: 1260px;
+	margin: 0 auto;
+	padding-top: 20px; /* gives sufficient clearence from banner to distinguish next section */
 }
 
 h1 {
