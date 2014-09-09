@@ -71,23 +71,43 @@ header {
 		text-align: left;
 		margin-left: 20px;
 	}
-
-	#banner {
+	.banner-bar {
 		width: 100%;
 		background: #3B283D;
 		color: #B6BAB9;
-		font-size: 6em;
+	}
+	#banner {
 		margin-top: 80vh;
+		font-size: 6em;
+		font-family: 'Foxes', Georgia, serif;
 	}
-/*
 	#main-nav {
-		height: 3em;
-		width: 100%;
-		background: #FFF url(/media/bg.png);
+		text-align: center;
 	}
-*/
+	nav ul {
+		padding: 30px 0;
+		margin: -23px 0;
+	}
+	nav li {
+		display: inline;
+		margin: 0 40px;
+	}
+	nav a {
+		text-decoration: none;
+		color: #3B283D;
+		font-family: 'Crush', Georgia, serif;
+		font-size: 2.2em;
+	}
+	nav a.active:before {
+		content: '[';
+	}
+	nav a.active:after {
+		content: ']';
+	}
+
+
 section.container {
-	margin: -25px 0; /* Pushes banner backround right up to text base */
+	margin: -18px 0; /* Pushes banner backround right up to text base */
 	background: #FFF url(/media/bg.png);
 }
 
@@ -117,22 +137,6 @@ h1 span {
 	font-family: 'Crush', Georgia, serif;
 }
 p {font-family: 'Sansation', Arial, sans-serif}
-
-nav ul {
-    height: auto;
-    padding: 8px 0;
-    margin: 0;
-}
-
-nav li {
-	display: inline;
-}
-
-nav a {
-    text-decoration: none;
-    color: #00F;
-    padding: 8px 8px 8px 8px;
-}
 
 /* Fancy fonts */
 @font-face {font-family: Delicious;src: local('Delicious'), url('fonts/Delicious.ttf') format('truetype')}
