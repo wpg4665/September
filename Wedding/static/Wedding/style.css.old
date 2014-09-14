@@ -81,7 +81,7 @@ nav a {
 /* butterfly with | */
 @font-face {font-family: Touch;src: local('Touch'), url('fonts/Touch.ttf') format('truetype');}
 /* _ for hearts, | for foxes */
-@font-face {font-family: Foxes;src: local('Foxes'), url('fonts/Foxes.ttf') format('truetype');}
+@font-face {font-family: Foxes;src: local('Foxes'), url('fonts/Foxes.ttf.old') format('truetype');}
 /* [ and ] for surrounding hearts, * for tiny heart, | for full character heart */
 @font-face {font-family: Crush;src: local('Crush'), url('fonts/Crush.ttf') format('truetype');}
 @font-face {font-family: Walt;src: local('Walt'), url('fonts/Walt.ttf') format('truetype');}

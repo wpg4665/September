@@ -24,6 +24,12 @@ body {
 		width: 640px;
 		background: url(/media/engagementLarge.png) no-repeat;
 	}
+
+	/*#steph-portrait {
+		width: 485px;
+		height: 485px;
+		background: url(/media/steph_young.png) no-repeat;
+	}*/
 }
 
 header {
@@ -77,12 +83,18 @@ header {
 		color: #B6BAB9;
 	}
 	#banner {
-		margin-top: 80vh;
-		font-size: 6em;
-		font-family: 'Foxes', Georgia, serif;
+		margin-top: 75vh;
+		font-size: 8em;
+		font-family: 'Italianno', Georgia, serif;
+	}
+	#banner span {
+		position: relative;
+		top: -23px;
 	}
 	#main-nav {
 		text-align: center;
+		position: relative;
+		z-index: 10;
 	}
 	nav ul {
 		padding: 30px 0;
@@ -98,17 +110,28 @@ header {
 		font-family: 'Crush', Georgia, serif;
 		font-size: 2.2em;
 	}
-	nav a.active:before {
-		content: '[';
-	}
-	nav a.active:after {
-		content: ']';
-	}
 
+	nav a:before, nav a:after {
+		position: absolute;
+	}
+	nav ul:hover a.active:before, nav ul:hover a.active:after {content: '';}
+	nav a.active:before, nav ul:hover a.active:hover:before {content: '[';}
+	nav a.active:after, nav ul:hover a.active:hover:after {content: ']';}
+
+	nav a:hover:before {content: '[';}
+	nav a:hover:after {content: ']';}
+
+	nav a span {padding-left: 24px;} /* Handle offset for absolutely positioned pseudo elements */
+
+
+article img {
+	max-height: 100%;
+}
 
 section.container {
-	margin: -18px 0; /* Pushes banner backround right up to text base */
+	margin: -79px 0 0; /* Pushes banner backround right up to text base */
 	background: #FFF url(/media/bg.png);
+	height: 100%;
 }
 
 #intro {
@@ -117,39 +140,96 @@ section.container {
 	padding-top: 20px; /* gives sufficient clearence from banner to distinguish next section */
 }
 
-h1 {
-	font-family: 'Foxes', Georgia, serif;
-	font-size: 6.5em;
-	text-align: center;
-	color: #966FD6;
-	text-shadow: -1.5px 0 5.5px black, 0 1.5px 5.5px black, 1.5px 0 5.5px black, 0 -1.5px 5.5px black;
-	position: fixed;
-	width: 100%;
-	left: 5.5%;
+p {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	-webkit-font-smoothing: antialiased;
 }
-h1.top {
-	top: -70px;
-}
-h1.bottom {
-	bottom: -90px;
-}
-h1 span {
-	font-family: 'Crush', Georgia, serif;
-}
-p {font-family: 'Sansation', Arial, sans-serif}
 
-/* Fancy fonts */
-@font-face {font-family: Delicious;src: local('Delicious'), url('fonts/Delicious.ttf') format('truetype')}
-/* Normal fonts */
-@font-face {font-family: Champagne;src: local('Champagne'), url('fonts/Champagne.ttf') format('truetype')}
-@font-face {font-family: Champagne-Bold;src: local('Champagne-Bold'), url('fonts/Champagne-Bold.ttf') format('truetype')}
-@font-face {font-family: Champagne-Italic;src: local('Champagne-Italic'), url('fonts/Champagne-Italic.ttf') format('truetype')}
-@font-face {font-family: Champagne-Bold-Italic;src: local('Champagne-Bold-Italic'), url('fonts/Champagne-Bold-Italic.ttf') format('truetype')}
-/* Test fonts */
-/* butterfly with | */
-@font-face {font-family: Touch;src: local('Touch'), url('fonts/Touch.ttf') format('truetype');}
-/* _ for hearts, | for foxes */
-@font-face {font-family: Foxes;src: local('Foxes'), url('fonts/Foxes.ttf') format('truetype');}
-/* [ and ] for surrounding hearts, * for tiny heart, | for full character heart */
-@font-face {font-family: Crush;src: local('Crush'), url('fonts/Crush.ttf') format('truetype');}
-@font-face {font-family: Walt;src: local('Walt'), url('fonts/Walt.ttf') format('truetype');}
+h1 {
+	font-family: 'Italianno', Georgia, serif;
+	font-size: 6.5em;
+	font-weight: normal;
+	margin: 0;
+}
+
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+.align-center {text-align: center;}
+.float-left {float: left;}
+.float-right {float: right;}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/* Sans Serif fonts */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/montserrat.eot');
+    src: url('fonts/montserrat/montserrat.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat/montserrat.woff2') format('woff2'),
+         url('fonts/montserrat/montserrat.woff') format('woff'),
+         url('fonts/montserrat/montserrat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/montserrat-bold.eot');
+    src: url('fonts/montserrat/montserrat-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat/montserrat-bold.woff2') format('woff2'),
+         url('fonts/montserrat/montserrat-bold.woff') format('woff'),
+         url('fonts/montserrat/montserrat-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/montserrat-italic.eot');
+    src: url('fonts/montserrat/montserrat-italic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat/montserrat-italic.woff2') format('woff2'),
+         url('fonts/montserrat/montserrat-italic.woff') format('woff'),
+         url('fonts/montserrat/montserrat-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/montserrat-bold-italic.eot');
+    src: url('fonts/montserrat/montserrat-bold-italic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat/montserrat-bold-italic.woff2') format('woff2'),
+         url('fonts/montserrat/montserrat-bold-italic.woff') format('woff'),
+         url('fonts/montserrat/montserrat-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+/* Ornament fonts */
+@font-face { /* [ and ] for surrounding hearts, * for tiny heart, | for full character heart */
+    font-family: 'Crush';
+    src: url('fonts/crush/crush.eot');
+    src: url('fonts/crush/crush.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crush/crush.woff2') format('woff2'),
+         url('fonts/crush/crush.woff') format('woff'),
+         url('fonts/crush/crushed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Serif fonts */
+@font-face {
+    font-family: 'Italianno';
+    src: url('fonts/italianno/italianno-regular-otf.eot');
+    src: url('fonts/italianno/italianno-regular-otf.eot?#iefix') format('embedded-opentype'),
+         url('fonts/italianno/italianno-regular-otf.woff2') format('woff2'),
+         url('fonts/italianno/italianno-regular-otf.woff') format('woff'),
+         url('fonts/italianno/italianno-regular-otf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
