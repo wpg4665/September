@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	color: #3B283D;
+	width: 100vw;
 }
 
 /* <- 352 px *//*
@@ -111,6 +112,14 @@ header {
 		font-size: 2.2em;
 	}
 
+	ul {
+		list-style-type: none;
+	}
+
+	a {
+		color: #3B283D;
+	}
+
 	nav a:before, nav a:after {
 		position: absolute;
 	}
@@ -123,13 +132,28 @@ header {
 
 	nav a span {padding-left: 24px;} /* Handle offset for absolutely positioned pseudo elements */
 
+	table {
+		width: 100%;
+		height: 100%;
+	}
+
+	footer {
+		font-family: 'Crush', Georgia, serif;
+		font-size: 1.7em;
+	}
+	footer li a {
+		text-decoration: none;
+	}
+	footer a {
+		color: #B6BAB9;
+	}
 
 article img {
 	max-height: 100%;
 }
 
 section.container {
-	margin: -79px 0 0; /* Pushes banner backround right up to text base */
+	margin: -79px 0 0; /* Pushes banner background right up to text base */
 	background: #FFF url(/media/bg.png);
 	height: 100%;
 }
@@ -137,7 +161,7 @@ section.container {
 #intro {
 	width: 1260px;
 	margin: 0 auto;
-	padding-top: 20px; /* gives sufficient clearence from banner to distinguish next section */
+	padding-top: 20px; /* gives sufficient clearance from banner to distinguish next section */
 }
 
 p {
@@ -153,7 +177,7 @@ h1 {
 	font-weight: normal;
 	margin: 0;
 }
-
+/*
 .align-left {text-align: left;}
 .align-right {text-align: right;}
 .align-center {text-align: center;}
@@ -168,7 +192,7 @@ h1 {
 	clear: both;
 	height: 0;
 }
-
+*/
 /* Sans Serif fonts */
 @font-face {
     font-family: 'Montserrat';
