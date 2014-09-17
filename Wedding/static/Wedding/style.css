@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	color: #3B283D;
-	width: 100vw;
+	width: 100%;
 }
 
 /* <- 352 px *//*
@@ -159,7 +159,7 @@ section.container {
 }
 
 #intro {
-	width: 1260px;
+	max-width: 1260px;
 	margin: 0 auto;
 	padding-top: 20px; /* gives sufficient clearance from banner to distinguish next section */
 }
@@ -177,22 +177,12 @@ h1 {
 	font-weight: normal;
 	margin: 0;
 }
-/*
+
 .align-left {text-align: left;}
 .align-right {text-align: right;}
 .align-center {text-align: center;}
-.float-left {float: left;}
-.float-right {float: right;}
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}
-*/
+
 /* Sans Serif fonts */
 @font-face {
     font-family: 'Montserrat';
