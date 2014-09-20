@@ -2,7 +2,9 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	color: #3B283D;
-	width: 100%;
+	width: 500%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* <- 352 px *//*
@@ -182,7 +184,6 @@ p {
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 1.3em;
 	line-height: 1.3em;
-	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -252,15 +253,15 @@ h1 {
 }
 /* Ornament fonts */
 @font-face { /* [ and ] for surrounding hearts, * for tiny heart, | for full character heart */
-    font-family: 'Crush';
+	font-family: 'Crush';
     src: url('fonts/crush/crush.eot');
     src: url('fonts/crush/crush.eot?#iefix') format('embedded-opentype'),
          url('fonts/crush/crush.woff2') format('woff2'),
          url('fonts/crush/crush.woff') format('woff'),
-         url('fonts/crush/crush.ttf') format('truetype');
+         url('fonts/crush/crush.ttf') format('truetype'),
+         url('fonts/crush/crush.svg#my_first_crushmedium') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 /* Serif fonts */
 @font-face {
