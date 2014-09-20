@@ -1,0 +1,39 @@
+{% extends "Wedding/base.html" %}
+{% load staticfiles %}
+{% block title %}Steph & Will{% endblock %}
+
+{% block content %}
+	{% include "Wedding/page_header.html" %}
+	<div class="container">
+
+		{% include "Wedding/page_nav.html" with curr_page="guest-info" %}
+
+		<div id="intro" class="content-block">
+			<article class="clearfix">
+				<h1 class="align-left">For Our Guests</h1>
+
+				<h2 class="align-left">Schedule</h2>
+				<div class="float-container">
+					<div class="text float-left">
+						<p></p>
+					</div>
+				</div>
+
+				<h2 class="align-left">Places to Stay</h2>
+				<div class="float-container">
+					<div class="text float-left">
+						<p></p>
+					</div>
+				</div>
+
+				<h2 class="align-left">Things to Do</h2>
+				<div class="float-container">
+					<div class="text float-left">
+						<p></p>
+					</div>
+				</div>
+			</article>
+
+		</div>
+	</div>
+{% endblock %}

@@ -2,7 +2,8 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	color: #3B283D;
-	width: 500%;
+	width: 100%;
+	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -42,6 +43,36 @@ body {
 		background: url(/media/dating.png) no-repeat;
 		background-size: 25% auto;
 	}
+
+	.kristi {
+		background: url(/media/kristi.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.jordan {
+		background: url(/media/jordan.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.mike {
+		background: url(/media/mike.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.berry {
+		background: url(/media/berry.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.alyssa {
+		background: url(/media/alyssa.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.ashley {
+		background: url(/media/ashley.png) no-repeat;
+		background-size: 25% auto;
+	}
+}
+
+.diplomat {
+	background: url(/media/diplomat.png) no-repeat;
+	background-size: 25% auto;
 }
 
 
@@ -149,14 +180,17 @@ header {
 		height: 100%;
 	}
 
-	footer {
+	div.footer {
 		font-family: 'Crush', Georgia, serif;
 		font-size: 1.7em;
 	}
-	footer li a {
+	div.footer ul {
+		padding: 0 40px;
+	}
+	div.footer li a {
 		text-decoration: none;
 	}
-	footer a {
+	div.footer a {
 		color: #B6BAB9;
 	}
 
@@ -166,9 +200,20 @@ header {
 	}
 	.container .float-container {
 		overflow: hidden;
+		margin-top: -2em;
 	}
 
-section.container {
+.container article {
+	padding-bottom: 6em;
+}
+
+article li {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.3em;
+}
+
+div.container {
 	margin: -79px 0 0; /* Pushes banner background right up to text base */
 	background: #FFF url(/media/bg.png);
 	height: 100%;
@@ -177,7 +222,7 @@ section.container {
 #intro {
 	max-width: 1260px;
 	margin: 0 auto;
-	padding-top: 20px; /* gives sufficient clearance from banner to distinguish next section */
+	padding-top: 100px; /* gives sufficient clearance from banner to distinguish next section */
 }
 
 p {
@@ -189,6 +234,13 @@ p {
 h1 {
 	font-family: 'Italianno', Georgia, serif;
 	font-size: 6.5em;
+	font-weight: normal;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'Italianno', Georgia, serif;
+	font-size: 4em;
 	font-weight: normal;
 	margin: 0;
 }
@@ -258,8 +310,7 @@ h1 {
     src: url('fonts/crush/crush.eot?#iefix') format('embedded-opentype'),
          url('fonts/crush/crush.woff2') format('woff2'),
          url('fonts/crush/crush.woff') format('woff'),
-         url('fonts/crush/crush.ttf') format('truetype'),
-         url('fonts/crush/crush.svg#my_first_crushmedium') format('svg');
+         url('fonts/crush/crush.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

@@ -1,0 +1,46 @@
+{% extends "Wedding/base.html" %}
+{% load staticfiles %}
+{% block title %}Steph & Will{% endblock %}
+
+{% block content %}
+	{% include "Wedding/page_header.html" %}
+	<div class="container">
+
+		{% include "Wedding/page_nav.html" with curr_page="reception" %}
+
+		<div id="intro" class="content-block">
+			<article class="clearfix">
+				<div class="float-container">
+					<h1 class="align-left">The Reception</h1>
+					<div>
+						<p>
+							The reception will also be held at the Diplomat Banquet Center. Hors d'oeuvres and drinks
+							will be available immediately following the ceremony while the newly weds and the rest of
+							the wedding party leave for photographs. Food will be served buffet style beginning around
+							6:30 P.M. Followed by DJ assisted dancing, cake cutting, and final farewells.
+						</p><p>
+							Speeches will be delivered before the buffet by the best man, Jordan Hunter, and the maid of
+							honor, Kristi Young. The couple will have their first dance, followed by Stephanie dancing
+							with her father, and then Will dancing with his aunt.
+						</p>
+					</div>
+				</div>
+			</article>
+
+			<article class="clearfix">
+				<div class="float-container">
+					<h1 class="align-left">Menu</h1>
+					<div>
+						<ul>
+							<li>Food</li>
+							<li>Food</li>
+							<li>And more</li>
+							<li>Food</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+		</div>
+	</div>
+{% endblock %}
