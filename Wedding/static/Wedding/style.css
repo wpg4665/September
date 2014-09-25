@@ -245,6 +245,12 @@ h2 {
 	margin: 0;
 }
 
+h3 {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 1.7em;
+	margin: 30px;
+}
+
 .align-left {text-align: left;}
 .align-right {text-align: right;}
 .align-center {text-align: center;}
