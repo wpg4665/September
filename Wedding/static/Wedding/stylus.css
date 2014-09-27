@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/montserrat/montserrat.eot");
+  src: url("fonts/montserrat/montserrat.eot?#iefix") format('embedded-opentype'), url("fonts/montserrat/montserrat.woff2") format('woff2'), url("fonts/montserrat/montserrat.woff") format('woff'), url("fonts/montserrat/montserrat.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/montserrat/montserrat-bold.eot");
+  src: url("fonts/montserrat/montserrat-bold.eot?#iefix") format('embedded-opentype'), url("fonts/montserrat/montserrat-bold.woff2") format('woff2'), url("fonts/montserrat/montserrat-bold.woff") format('woff'), url("fonts/montserrat/montserrat-bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/montserrat/montserrat-italic.eot");
+  src: url("fonts/montserrat/montserrat-italic.eot?#iefix") format('embedded-opentype'), url("fonts/montserrat/montserrat-italic.woff2") format('woff2'), url("fonts/montserrat/montserrat-italic.woff") format('woff'), url("fonts/montserrat/montserrat-italic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/montserrat/montserrat-bold-italic.eot");
+  src: url("fonts/montserrat/montserrat-bold-italic.eot?#iefix") format('embedded-opentype'), url("fonts/montserrat/montserrat-bold-italic.woff2") format('woff2'), url("fonts/montserrat/montserrat-bold-italic.woff") format('woff'), url("fonts/montserrat/montserrat-bold-italic.ttf") format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+/* [ and ] for surrounding hearts, * for tiny heart, | for full character heart */
+  font-family: 'Crush';
+  src: url("fonts/crush/crush.eot");
+  src: url("fonts/crush/crush.eot?#iefix") format('embedded-opentype'), url("fonts/crush/crush.woff2") format('woff2'), url("fonts/crush/crush.woff") format('woff'), url("fonts/crush/crush.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Italianno';
+  src: url("fonts/italianno/italianno-regular-otf.eot");
+  src: url("fonts/italianno/italianno-regular-otf.eot?#iefix") format('embedded-opentype'), url("fonts/italianno/italianno-regular-otf.woff2") format('woff2'), url("fonts/italianno/italianno-regular-otf.woff") format('woff'), url("fonts/italianno/italianno-regular-otf.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+header #header-top {
+  position: fixed;
+  width: 100%;
+  z-index: -10;
+  background: #fff url("/media/bg.png");
+}
+header #header-top > div {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15vh;
+  font-size: 4em;
+  font-family: 'Crush', Georgia, serif;
+}
+header #header-top #wedding-date {
+  text-align: right;
+  margin-right: 20px;
+}
+header #header-top #countdown {
+  text-align: left;
+  margin-left: 20px;
+}
+#portrait {
+  display: inline-block;
+  height: 90vh;
+  background-size: cover;
+  background-position: center top;
+}
+@media (max-width: 73.375em) and (min-width: 52.125em) {
+  #portrait {
+    width: 320px;
+    background: url("/media/engagementMed.png") no-repeat;
+  }
+}
+.will-young {
+  background: url("/media/will_young.png") no-repeat;
+  background-size: 25% auto;
+}
+.steph-young {
+  background: url("/media/steph_young.png") no-repeat;
+  background-size: 25% auto;
+}
+.dating {
+  background: url("/media/dating.png") no-repeat;
+  background-size: 25% auto;
+}
+.kristi {
+  background: url("/media/kristi.png") no-repeat;
+  background-size: 25% auto;
+}
+.jordan {
+  background: url("/media/jordan.png") no-repeat;
+  background-size: 25% auto;
+}
+.mike {
+  background: url("/media/mike.png") no-repeat;
+  background-size: 25% auto;
+}
+.berry {
+  background: url("/media/berry.png") no-repeat;
+  background-size: 25% auto;
+}
+.alyssa {
+  background: url("/media/alyssa.png") no-repeat;
+  background-size: 25% auto;
+}
+.ashley {
+  background: url("/media/ashley.png") no-repeat;
+  background-size: 25% auto;
+}
+.diplomat {
+  background: url("/media/diplomat.png") no-repeat;
+  background-size: 25% auto;
+}
+#banner {
+  font-size: 8em;
+  line-height: 0.96;
+  font-family: 'Italianno', Georgia, serif;
+  height: 1em;
+  text-align: center;
+}
+@media (min-width: 73.375em) {
+  #banner .banner-bar {
+    height: 0.64em;
+  }
+}
+@media (max-width: 73.375em) {
+  #banner .banner-bar {
+    height: 1.59em;
+  }
+}
+#banner span {
+  position: relative;
+  top: -4px;
+}
+nav {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+nav ul {
+  padding: 30px 0;
+  margin: -30px 0;
+}
+nav ul:hover a.active:before,
+nav ul:hover a.active:after {
+  content: '';
+}
+nav li {
+  display: inline;
+  margin: 0 2.3%;
+}
+nav a {
+  text-decoration: none;
+  color: #3b283d;
+  font-family: 'Crush', Georgia, serif;
+  font-size: 2.2em;
+  line-height: 2;
+}
+nav a .active:hover:before,
+nav a .active:before {
+  content: '[';
+}
+nav a .active:hover:after,
+nav a .active:after {
+  content: ']';
+}
+nav a:before,
+nav a:after {
+  position: absolute;
+}
+nav a:hover:before {
+  content: '[';
+}
+nav a:hover:after {
+  content: ']';
+}
+nav a span {
+  padding-left: 24px;
+}
+.text {
+  width: 75%;
+}
+.container {
+  margin-top: 75vh;
+  background: #fff url("/media/bg.png");
+  height: 100%;
+}
+.container .float-container {
+  overflow: hidden;
+  margin-top: -2em;
+}
+.container article {
+  padding-bottom: 6em;
+}
+.container article li {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+.container #intro {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.footer {
+  font-family: 'Crush', Georgia, serif;
+  font-size: 1.7em;
+}
+li a {
+  text-decoration: none;
+}
+a {
+  color: #b6bab9;
+}
+td:last-of-type {
+  padding: 10px;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: #3b283d;
+  width: 100%;
+  height: 100%;
+  min-width: 20em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2 {
+  font-family: 'Italianno', Georgia, serif;
+  font-size: 6.5em;
+  font-weight: normal;
+  line-height: 1.7;
+  margin: 0;
+}
+h2 {
+  font-size: 4em;
+  line-height: 1;
+}
+h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.7em;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+ul {
+  padding: 1em;
+  list-style-type: none;
+}
+a {
+  color: #3b283d;
+}
+table {
+  width: 100%;
+  height: 100%;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.bg-left {
+  background-position: 0;
+}
+.bg-right {
+  background-position: 100%;
+}
+.banner-bar {
+  width: 100%;
+  background: #3b283d;
+  color: #b6bab9;
+}
