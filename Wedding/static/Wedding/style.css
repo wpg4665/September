@@ -4,46 +4,91 @@ body {
 	color: #3B283D;
 	width: 100%;
 	height: 100%;
+	min-width: 582px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* <- 352 px *//*
-@media (max-width: 22em) {
-	header .portrait {
-		background: url(/media/engagementSmall.png);
+
+/* 834px <- 1173px */
+@media (max-width: 73.374em) and (min-width: 52.125em) {
+
+	#portrait {
+		width: 320px;
+		background: url(/media/engagementMed.png) no-repeat;
 	}
 }
 
-/* 353px - 720px *//*
-@media (min-width: 22.0625em) and (max-width: 45em) {
-	header .portrait {
-		background: url(/media/engagementMed.png);
+/*  <- 1173px */
+@media (max-width: 73.374em) {
+	#banner .banner-bar {
+		height: 1.59em;
+	}
+
+	.will-young {
+		background: url(/media/will_young_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.steph-young {
+		background: url(/media/steph_young_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.dating {
+		background: url(/media/dating_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.kristi {
+		background: url(/media/kristi_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.jordan {
+		background: url(/media/jordan_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.mike {
+		background: url(/media/mike_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.berry {
+		background: url(/media/berry_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.alyssa {
+		background: url(/media/alyssa_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.ashley {
+		background: url(/media/ashley_small.png) no-repeat;
+		background-size: 25% auto;
+	}
+	.diplomat {
+		background: url(/media/diplomat_small.png) no-repeat;
+		background-size: 25% auto;
 	}
 }
 
-/* 1100px -> */
-@media (min-width: 68.75em) {
+/* 1174px -> */
+@media (min-width: 73.375em) {
+	#banner .banner-bar {
+		height: 0.64em;
+	}
+
 	#portrait {
 		width: 640px;
 		background: url(/media/engagementLarge.png) no-repeat;
 	}
-
 	.will-young {
 		background: url(/media/will_young.png) no-repeat;
 		background-size: 25% auto;
 	}
-
 	.steph-young {
 		background: url(/media/steph_young.png) no-repeat;
 		background-size: 25% auto;
 	}
-
 	.dating {
 		background: url(/media/dating.png) no-repeat;
 		background-size: 25% auto;
 	}
-
 	.kristi {
 		background: url(/media/kristi.png) no-repeat;
 		background-size: 25% auto;
@@ -68,11 +113,10 @@ body {
 		background: url(/media/ashley.png) no-repeat;
 		background-size: 25% auto;
 	}
-}
-
-.diplomat {
-	background: url(/media/diplomat.png) no-repeat;
-	background-size: 25% auto;
+	.diplomat {
+		background: url(/media/diplomat.png) no-repeat;
+		background-size: 25% auto;
+	}
 }
 
 
@@ -107,6 +151,7 @@ header {
 		display: inline-block;
 		height: 90vh;
 		background-size: cover;
+		background-position: center top;
 		/* background-url and width set in @media */
 	}
 
@@ -127,13 +172,15 @@ header {
 		color: #B6BAB9;
 	}
 	#banner {
-		margin-top: 75vh;
 		font-size: 8em;
+		line-height: 0.96;
 		font-family: 'Italianno', Georgia, serif;
+		height: 1em;
+		text-align: center;
 	}
 	#banner span {
 		position: relative;
-		top: -23px;
+		top: -4px;
 	}
 	#main-nav {
 		text-align: center;
@@ -146,13 +193,14 @@ header {
 	}
 	nav li {
 		display: inline;
-		margin: 0 40px;
+		margin: 0 2.3%;
 	}
 	nav a {
 		text-decoration: none;
 		color: #3B283D;
 		font-family: 'Crush', Georgia, serif;
 		font-size: 2.2em;
+		line-height: 2;
 	}
 
 	ul {
@@ -184,16 +232,15 @@ header {
 		font-family: 'Crush', Georgia, serif;
 		font-size: 1.7em;
 	}
-	div.footer ul {
-		padding: 0 40px;
-	}
 	div.footer li a {
 		text-decoration: none;
 	}
 	div.footer a {
 		color: #B6BAB9;
 	}
-
+	div.footer td:last-of-type {
+		padding: 10px;
+	}
 
 	div.text {
 		width: 75%;
@@ -214,7 +261,7 @@ article li {
 }
 
 div.container {
-	margin: -79px 0 0; /* Pushes banner background right up to text base */
+	margin-top: 75vh;
 	background: #FFF url(/media/bg.png);
 	height: 100%;
 }
@@ -222,7 +269,11 @@ div.container {
 #intro {
 	max-width: 1260px;
 	margin: 0 auto;
-	padding-top: 100px; /* gives sufficient clearance from banner to distinguish next section */
+	padding-top: 40px; /* gives sufficient clearance from banner to distinguish next section */
+}
+
+ul {
+	padding: 40px;
 }
 
 p {
@@ -236,13 +287,14 @@ h1 {
 	font-size: 6.5em;
 	font-weight: normal;
 	margin: 0;
+	line-height: 1.7em;
 }
 
 h2 {
 	font-family: 'Italianno', Georgia, serif;
 	font-size: 4em;
 	font-weight: normal;
-	margin: 0;
+	margin: 0.4em 0;
 }
 
 h3 {
