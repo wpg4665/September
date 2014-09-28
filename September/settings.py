@@ -24,7 +24,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.10.121', 'stephandwill.com']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
