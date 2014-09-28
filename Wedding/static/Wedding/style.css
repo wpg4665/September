@@ -265,8 +265,12 @@ header {
 		position: absolute;
 	}
 	nav ul:hover a.active:before, nav ul:hover a.active:after {content: '';}
-	nav a.active:before, nav ul:hover a.active:hover:before {content: '[';}
-	nav a.active:after, nav ul:hover a.active:hover:after {content: ']';}
+
+	nav a.active:before,
+	nav ul:hover a.active:hover:before {content: '[';}
+
+	nav a.active:after,
+	nav ul:hover a.active:hover:after {content: ']';}
 
 	nav a:hover:before {content: '[';}
 	nav a:hover:after {content: ']';}

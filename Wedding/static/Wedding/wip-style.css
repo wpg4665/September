@@ -27,6 +27,10 @@ body {
 		height: 1.59em;
 	}*//*
 
+    nav ul {
+        width: 600px;
+    }
+
 	.will-young {
 		background: url(/media/will_young_small.png) no-repeat;
 		background-size: 25% auto;
@@ -69,13 +73,71 @@ body {
 	}
 }*/
 
+/* 842 -> */
+/*@media (min-width: 53.125em) {
+*//*    #portrait {
+        display: inline-block;
+    }
+    #portrait-narrow {
+        display: none;
+    }*//*
+*//*    header {
+        text-align: center;
+    }*//*
+   *//* #header-top > div {
+        margin-top: 15vh;
+		font-size: 4em;
+        display: inline-block;
+    }*//*
+    *//* Div specifically for the date *//*
+	#wedding-date {
+		text-align: right;
+		margin-right: 20px;
+	}
+
+	*//* Div specifically for countdown *//*
+	#countdown {
+		text-align: left;
+		margin-left: 20px;
+	}
+}*/
+
+/* <- 842px */
+/*@media (max-width: 53.124em) {
+    #portrait {
+        display: none;
+    }
+    #portrait-narrow {
+        width: 320px;
+        height: 90vh;
+        background: url(/media/engagementMed.png) no-repeat center top;
+        float: right;
+    }*/
+/*    header {
+        text-align: left;
+    }*/
+/*    #header-top > div {
+        margin-top: 40px;
+		font-size: 3em;
+        font-weight: bold;
+        float: left;
+    }*/
+/*    #countdown {
+        clear: left;
+    }
+}*/
+
 /* 1174px -> */
-@media (min-width: 73.375em) {
+/*@media (min-width: 73.375em) {
 	#banner .banner-bar {
 		height: 0.64em;
 	}
 
-	#portrait {
+    nav ul {
+        width: 1174px;
+    }*/
+
+	/*#portrait {
 		width: 640px;
 		background: url(/media/engagementLarge.png) no-repeat;
 	}
@@ -119,11 +181,12 @@ body {
 		background: url(/media/diplomat.png) no-repeat;
 		background-size: 25% auto;
 	}
-}
+}*/
 
 
 /*header {
 	width: 100%;
+   	height: 75vh;
 	overflow: hidden;
 	text-align: center;
 }*/
@@ -135,6 +198,8 @@ body {
 	/*#header-top {
 		position: fixed;
 		width: 100%;
+        min-width: 320px;
+        height: 100%;
 		z-index: -10;
 		background: #FFF url(/media/bg.png);
 	}*/
@@ -203,7 +268,8 @@ body {
 		font-family: 'Crush', Georgia, serif;
 		font-size: 2.2em;
 		line-height: 2;
-	}*/
+       	display: block;
+	}
 
 	/*ul {
 		list-style-type: none;

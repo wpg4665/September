@@ -44,86 +44,265 @@
 header {
   width: 100%;
   overflow: hidden;
-  text-align: center;
 }
-header #header-top {
+@media (min-width: 53.125em) {
+  header {
+    text-align: center;
+    height: 75vh;
+  }
+}
+@media (max-width: 53.124em) {
+  header {
+    text-align: left;
+    height: 65vh;
+  }
+}
+header > section {
   position: fixed;
   width: 100%;
   z-index: -10;
   background: #fff url("/media/bg.png");
+  min-width: 20em;
+  height: 100%;
 }
-header #header-top > div {
-  display: inline-block;
+header > section > div {
   vertical-align: top;
-  margin-top: 15vh;
-  font-size: 4em;
   font-family: 'Crush', Georgia, serif;
 }
-header #header-top #wedding-date {
-  text-align: right;
-  margin-right: 20px;
+@media (min-width: 53.125em) {
+  header > section > div {
+    display: inline-block;
+    margin-top: 15vh;
+    font-size: 4em;
+  }
 }
-header #header-top #countdown {
-  text-align: left;
-  margin-left: 20px;
+@media (max-width: 53.124em) {
+  header > section > div {
+    margin-top: 40px;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+  }
+}
+@media (min-width: 73.375em) {
+  header > section #wedding-date {
+    margin-right: 20px;
+    text-align: right;
+  }
+}
+@media (min-width: 53.125em) and (max-width: 73.374em) {
+  header > section #wedding-date {
+    text-align: right;
+  }
+}
+@media (max-width: 39.687000000000005em) {
+  header > section #wedding-date {
+    color: #b6bab9;
+    margin-top: 0;
+    position: absolute;
+  }
+}
+@media (min-width: 73.375em) {
+  header > section #countdown {
+    margin-left: 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 53.125em) and (max-width: 73.374em) {
+  header > section #countdown {
+    text-align: left;
+  }
+}
+@media (max-width: 53.124em) and (min-width: 39.688em) {
+  header > section #countdown {
+    clear: left;
+  }
+}
+@media (max-width: 39.687000000000005em) {
+  header > section #countdown {
+    display: none;
+  }
 }
 #portrait {
-  display: inline-block;
   height: 90vh;
-  background-size: cover;
-  background-position: center top;
 }
-@media (max-width: 73.375em) and (min-width: 52.125em) {
+@media (min-width: 73.375em) {
   #portrait {
-    width: 320px;
-    background: url("/media/engagementMed.png") no-repeat;
+    width: 640px;
+    background: url("/media/engagementLarge.png") no-repeat center top/cover;
+  }
+}
+@media (max-width: 73.374em) and (min-width: 53.125em) {
+  #portrait {
+    width: 40%;
+    background: url("/media/engagementLarge.png") no-repeat center top/cover;
+  }
+}
+@media (min-width: 53.125em) {
+  #portrait {
+    display: inline-block;
+  }
+}
+@media (max-width: 53.124em) {
+  #portrait {
+    display: none;
+  }
+}
+@media (min-width: 53.125em) {
+  #portrait-narrow {
+    display: none;
+  }
+}
+@media (max-width: 53.124em) and (min-width: 39.688em) {
+  #portrait-narrow {
+    width: 400px;
+    height: 90vh;
+    background: url("/media/engagementMed.png") no-repeat center top;
+    float: right;
+  }
+}
+@media (max-width: 39.687000000000005em) {
+  #portrait-narrow {
+    width: 100%;
+    height: 90vh;
+    background: url("/media/engagementMed.png") no-repeat -60px top;
+    float: right;
   }
 }
 .will-young {
   background: url("/media/will_young.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .will-young {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .will-young {
+    background-size: 22em auto;
+  }
 }
 .steph-young {
   background: url("/media/steph_young.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .steph-young {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .steph-young {
+    background-size: 22em auto;
+  }
 }
 .dating {
   background: url("/media/dating.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .dating {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .dating {
+    background-size: 26em auto;
+  }
 }
 .kristi {
   background: url("/media/kristi.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .kristi {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .kristi {
+    background-size: 22em auto;
+  }
 }
 .jordan {
   background: url("/media/jordan.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .jordan {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .jordan {
+    background-size: 22em auto;
+  }
 }
 .mike {
   background: url("/media/mike.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .mike {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .mike {
+    background-size: 22em auto;
+  }
 }
 .berry {
   background: url("/media/berry.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .berry {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .berry {
+    background-size: 22em auto;
+  }
 }
 .alyssa {
   background: url("/media/alyssa.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .alyssa {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .alyssa {
+    background-size: 22em auto;
+  }
 }
 .ashley {
   background: url("/media/ashley.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .ashley {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .ashley {
+    background-size: 22em auto;
+  }
 }
 .diplomat {
   background: url("/media/diplomat.png") no-repeat;
-  background-size: 25% auto;
+}
+@media (min-width: 73.375em) {
+  .diplomat {
+    background-size: 25% auto;
+  }
+}
+@media (max-width: 73.374em) {
+  .diplomat {
+    background-size: 33em auto;
+  }
 }
 #banner {
   font-size: 8em;
   line-height: 0.96;
   font-family: 'Italianno', Georgia, serif;
-  height: 1em;
   text-align: center;
 }
 @media (min-width: 73.375em) {
@@ -131,7 +310,7 @@ header #header-top #countdown {
     height: 0.64em;
   }
 }
-@media (max-width: 73.375em) {
+@media (max-width: 73.374em) {
   #banner .banner-bar {
     height: 1.59em;
   }
@@ -140,22 +319,49 @@ header #header-top #countdown {
   position: relative;
   top: -4px;
 }
+#banner span.short {
+  max-width: 300px;
+}
+@media (max-width: 39.687000000000005em) {
+  #banner span.short {
+    display: block;
+  }
+}
 nav {
   text-align: center;
   position: relative;
-  z-index: 10;
+  z-index: 50;
 }
 nav ul {
-  padding: 30px 0;
-  margin: -30px 0;
+  margin: 0 auto;
+}
+@media (min-width: 73.375em) {
+  nav ul {
+    width: 73.375em;
+  }
+}
+@media (max-width: 73.374em) and (min-width: 39.688em) {
+  nav ul {
+    width: 500px;
+  }
 }
 nav ul:hover a.active:before,
 nav ul:hover a.active:after {
   content: '';
 }
+nav ul:hover a.active:hover:before {
+  content: '[';
+}
+nav ul:hover a.active:hover:after {
+  content: ']';
+}
 nav li {
-  display: inline;
-  margin: 0 2.3%;
+  margin: 0 2.2%;
+}
+@media (min-width: 39.688em) {
+  nav li {
+    float: left;
+  }
 }
 nav a {
   text-decoration: none;
@@ -163,13 +369,12 @@ nav a {
   font-family: 'Crush', Georgia, serif;
   font-size: 2.2em;
   line-height: 2;
+  display: block;
 }
-nav a .active:hover:before,
-nav a .active:before {
+nav a.active:before {
   content: '[';
 }
-nav a .active:hover:after,
-nav a .active:after {
+nav a.active:after {
   content: ']';
 }
 nav a:before,
@@ -185,17 +390,30 @@ nav a:hover:after {
 nav a span {
   padding-left: 24px;
 }
-.text {
-  width: 75%;
+@media (min-width: 73.375em) {
+  .text {
+    width: 75%;
+  }
+}
+@media (max-width: 73.374em) {
+  .text {
+    width: 100%;
+  }
 }
 .container {
-  margin-top: 75vh;
   background: #fff url("/media/bg.png");
   height: 100%;
 }
 .container .float-container {
   overflow: hidden;
-  margin-top: -2em;
+}
+.container .float-container h1:not(.no-bg) {
+  white-space: nowrap;
+}
+@media (max-width: 73.374em) {
+  .container .float-container h1:not(.no-bg) {
+    margin-bottom: 2.5em;
+  }
 }
 .container article {
   padding-bottom: 6em;
@@ -208,19 +426,18 @@ nav a span {
 .container #intro {
   max-width: 1260px;
   margin: 0 auto;
-  padding-top: 40px;
 }
 .footer {
   font-family: 'Crush', Georgia, serif;
   font-size: 1.7em;
 }
-li a {
+.footer li a {
   text-decoration: none;
 }
-a {
+.footer a {
   color: #b6bab9;
 }
-td:last-of-type {
+.footer td:last-of-type {
   padding: 10px;
 }
 body {
@@ -233,8 +450,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h1,
-h2 {
+h1 {
   font-family: 'Italianno', Georgia, serif;
   font-size: 6.5em;
   font-weight: normal;
@@ -242,8 +458,11 @@ h2 {
   margin: 0;
 }
 h2 {
+  font-family: 'Italianno', Georgia, serif;
   font-size: 4em;
+  font-weight: normal;
   line-height: 1;
+  margin: 0;
 }
 h3 {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -256,6 +475,7 @@ p {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 1.3em;
   line-height: 1.3em;
+  margin: 20px;
 }
 ul {
   padding: 1em;
@@ -268,6 +488,18 @@ table {
   width: 100%;
   height: 100%;
 }
+@media (min-width: 39.688em) {
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
+}
+@media (max-width: 39.687000000000005em) {
+  iframe {
+    width: 20em;
+    height: 10em;
+  }
+}
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -279,8 +511,10 @@ table {
 .align-left {
   text-align: left;
 }
-.align-right {
-  text-align: right;
+@media (min-width: 39.688em) {
+  .align-right {
+    text-align: right;
+  }
 }
 .align-center {
   text-align: center;
@@ -294,11 +528,41 @@ table {
 .bg-left {
   background-position: 0;
 }
+@media (max-width: 73.374em) {
+  .bg-left {
+    background-position: 50% 7em;
+  }
+}
 .bg-right {
   background-position: 100%;
+}
+@media (max-width: 73.374em) {
+  .bg-right {
+    background-position: 50% 7em;
+  }
 }
 .banner-bar {
   width: 100%;
   background: #3b283d;
   color: #b6bab9;
+}
+@media (min-width: 39.688em) {
+  span.short {
+    display: none;
+  }
+}
+@media (max-width: 39.687000000000005em) {
+  span.short {
+    display: inline;
+  }
+}
+@media (min-width: 39.688em) {
+  span.long {
+    display: inline;
+  }
+}
+@media (max-width: 39.687000000000005em) {
+  span.long {
+    display: none;
+  }
 }
