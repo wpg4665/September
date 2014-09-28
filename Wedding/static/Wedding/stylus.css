@@ -65,6 +65,11 @@ header > section {
   min-width: 20em;
   height: 100%;
 }
+@media (max-width: 53.124em) {
+  header > section {
+    padding: 0 6%;
+  }
+}
 header > section > div {
   vertical-align: top;
   font-family: 'Crush', Georgia, serif;
@@ -325,6 +330,7 @@ header > section > div {
 @media (max-width: 39.687000000000005em) {
   #banner span.short {
     display: block;
+    margin: 0 auto;
   }
 }
 nav {
