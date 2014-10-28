@@ -580,12 +580,23 @@ table {
     display: none;
   }
 }
-.arrow {
-  position: fixed;
+#arrow {
+  position: absolute;
   width: 100px;
   height: 100px;
   background-image: url("/static/Wedding/arrow.svg");
   background-size: contain;
-  top: 55%;
+  top: 60%;
   left: 8%;
+  cursor: pointer;
+}
+@media (max-width: 53.124em) {
+  #arrow {
+    top: 50%;
+  }
+}
+@media (max-width: 39.687000000000005em) {
+  #arrow {
+    background-image: url("/static/Wedding/arrow-gray.svg");
+  }
 }
