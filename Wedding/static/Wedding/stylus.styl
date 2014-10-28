@@ -290,10 +290,10 @@ nav
 			white-space: nowrap
 
 			@media (max-width: highest-width - 0.001)
-				margin-bottom: 2.5em //30%
+				margin-bottom: 3.1em
 
 	article
-		padding-bottom: 6em
+		padding-bottom: 5em
 
 		li
 			font-family: 'Montserrat', Arial, sans-serif
@@ -335,7 +335,7 @@ h1
 	font-family: 'Italianno', Georgia, serif
 	font-size: 6.5em
 	font-weight: normal
-	line-height: 1.7
+	line-height: 1.3
 	margin: 0
 
 h2
@@ -377,6 +377,15 @@ iframe
 	@media (max-width: low-med-width - 0.001)
 		width: lowest-width
 		height: (lowest-width / 2)
+
+
+::selection
+	background: purple
+	color: gray
+
+::-moz-selection
+	background: purple
+	color: gray
 
 
 // COMMON CLASSES
@@ -434,3 +443,13 @@ span.long
 
 	@media (max-width: low-med-width - 0.001)
 		display: none
+
+
+.arrow
+	position fixed
+	width 100px
+	height 100px
+	background-image url('/static/Wedding/arrow.svg')
+	background-size contain
+	top 55%
+	left 8%
