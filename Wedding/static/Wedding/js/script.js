@@ -1,12 +1,8 @@
 (function() {
 
-	var arrow = document.getElementById("arrow"),
-		anim_top;
+	var arrow = document.getElementById("arrow");
 
-	anim_top = getMatchedStyle(arrow, "top");
-	anim_top = parseInt(anim_top.replace("%", ""));
-
-	Velocity(arrow, { top: [(anim_top - 2) + "%", 'spring']}, { duration: 1000, loop: true });
+	Velocity(arrow, {marginTop: ["-2%", "spring"]}, { duration: 1000, loop: true });
 
 	arrow.addEventListener("click", scroll, false);
 	arrow.addEventListener("touchstart", scroll, false);
@@ -55,37 +51,6 @@
 			}
 		}
 		setTimeout(adjust_date, 60 * 1000); // Every 60 seconds, adjust the date
-	}
-
-	function getMatchedStyle(elem, property){
-		// element property has highest priority
-		var val = elem.style.getPropertyValue(property);
-
-		// if it's important, we are done
-		if(elem.style.getPropertyPriority(property))
-			return val;
-
-		// get matched rules
-		var rules = getMatchedCSSRules(elem);
-
-		// iterate the rules backwards
-		// rules are ordered by priority, highest last
-		for(var i = rules.length; i --> 0;){
-			var r = rules[i];
-
-			var important = r.style.getPropertyPriority(property);
-
-			// if set, only reset if important
-			if(val == null || important){
-				val = r.style.getPropertyValue(property);
-
-				// done if important
-				if(important)
-					break;
-			}
-		}
-
-		return val;
 	}
 
 	setTimeout(adjust_date, 60 * 1000); // Every 60 seconds, adjust the date
