@@ -600,3 +600,11 @@ table {
     background-image: url("/static/Wedding/arrow-gray.svg");
   }
 }
+.crush {
+  color: #3b283d;
+  font-family: 'Crush', Georgia, serif;
+  font-size: 2.2em;
+  position: relative;
+  top: 22px;
+  right: 10px;
+}

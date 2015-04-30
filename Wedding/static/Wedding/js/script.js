@@ -55,6 +55,6 @@
 
 	setTimeout(adjust_date, 60 * 1000); // Every 60 seconds, adjust the date
 
-	setTimeout(scroll, 5000); // Auto scroll after 2 seconds
+	setTimeout(scroll, 2000); // Auto scroll after 2 seconds
 
 }());
